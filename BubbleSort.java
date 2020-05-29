@@ -4,7 +4,7 @@ public class BubbleSort {
         BubbleArray(a);
     }
 
-    public static int[] BubbleArray(int[] numbers) {
+    public static void BubbleArray(int[] numbers) {
         int temp = 0;  // 临时变量，用于交换变量值
         for (int i = 0; i < numbers.length; i++) {
             for (int j = i + 1; j < numbers.length; j++) {
@@ -15,6 +15,8 @@ public class BubbleSort {
                 }
             }
         }
-        return numbers;
+        for (int n : numbers) {
+            System.out.print(n + " ");
+        }
     }
 }
